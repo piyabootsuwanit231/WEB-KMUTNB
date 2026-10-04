@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สมัครเรียน - ระบบรับสมัครนักศึกษาใหม่</title>
+<link rel="icon" type="image/png" href="logo-kmutnb.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="form-page">
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo-kmutnb.png" class="brand-logo" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+      <div class="brand-text">
+        ระบบรับสมัครนักศึกษาใหม่
+        <small>ปีการศึกษา 2569</small>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">หน้าแรก</a>
+      <a href="index.html#programs">สาขาที่เปิดรับ</a>
+      <a href="index.html#timeline">กำหนดการ</a>
+      <a href="status.html">ตรวจสอบสถานะ</a>
+      <a href="login.html">เข้าสู่ระบบ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero-eyebrow">ขั้นตอนที่ 1 จาก 1 · แบบฟอร์มใบสมัคร</p>
+    <h1>ใบสมัครเข้าศึกษา</h1>
+    <p>กรุณากรอกข้อมูลให้ครบถ้วนตรงตามเอกสารจริง ระบบจะออกเลขที่ใบสมัครให้ทันทีหลังยืนยันข้อมูล</p>
+  </div>
+</section>
+
+<section class="form-shell">
+  <div class="wrap">
+    <form class="form-card" onsubmit="return false;">
+      <h2>ข้อมูลผู้สมัคร</h2>
+      <p class="form-intro">ทุกช่องที่มีเครื่องหมาย * จำเป็นต้องกรอก</p>
+
+      <fieldset class="fieldset">
+        <legend>ข้อมูลส่วนตัว</legend>
+        <div class="field-row">
+          <div class="field">
+            <label for="fname">ชื่อ *</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div class="field">
+            <label for="lname">นามสกุล *</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="citizen">เลขบัตรประชาชน *</label>
+            <input type="text" id="citizen" name="citizen" maxlength="13" required>
+          </div>
+          <div class="field">
+            <label for="dob">วัน เดือน ปีเกิด *</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">อีเมล *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">เบอร์โทรศัพท์ *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>ประวัติการศึกษา</legend>
+        <div class="field-row">
+          <div class="field">
+            <label for="school">โรงเรียนที่จบการศึกษา *</label>
+            <input type="text" id="school" name="school" required>
+          </div>
+          <div class="field">
+            <label for="gpa">เกรดเฉลี่ยสะสม (GPAX) *</label>
+            <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4" required>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="program">สาขาวิชาที่ต้องการสมัคร *</label>
+          <select id="program" name="program" required>
+            <option value="">— เลือกสาขาวิชา —</option>
+            <option value="cpe">วิศวกรรมคอมพิวเตอร์</option>
+            <option value="ds">วิทยาการข้อมูล</option>
+            <option value="ba">บริหารธุรกิจ</option>
+            <option value="arch">สถาปัตยกรรมศาสตร์</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>เอกสารประกอบการสมัคร</legend>
+        <div class="field full">
+          <label for="transcript">ใบระเบียนผลการเรียน (ปพ.1) *</label>
+          <span class="hint">รองรับไฟล์ PDF หรือรูปภาพ ขนาดไม่เกิน 5 MB</span>
+          <input type="file" id="transcript" name="transcript" required>
+        </div>
+        <div class="field full">
+          <label for="idcard">สำเนาบัตรประชาชน *</label>
+          <input type="file" id="idcard" name="idcard" required>
+        </div>
+        <div class="field full">
+          <label for="note">หมายเหตุเพิ่มเติม</label>
+          <span class="hint">ระบุข้อมูลเพิ่มเติม เช่น ความสามารถพิเศษ หรือรางวัลที่ได้รับ</span>
+          <textarea id="note" name="note"></textarea>
+        </div>
+      </fieldset>
+
+      <label class="checkline">
+        <input type="checkbox" required>
+        ข้าพเจ้าขอรับรองว่าข้อมูลและเอกสารที่แนบมาทั้งหมดเป็นความจริงทุกประการ
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">ยืนยันการสมัคร</button>
+        <span class="form-note">หลังยืนยัน ระบบจะส่งเลขที่ใบสมัครไปยังอีเมลที่ระบุ</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>ระบบรับสมัครนักศึกษาใหม่ · งานทะเบียนและรับเข้าศึกษา</div>
+    <div>สอบถามเพิ่มเติม admission@example.ac.th</div>
+  </div>
+</footer>
+
+</body>
+</html>

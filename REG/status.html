@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ตรวจสอบสถานะ - ระบบรับสมัครนักศึกษาใหม่</title>
+<link rel="icon" type="image/png" href="logo-kmutnb.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="form-page">
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo-kmutnb.png" class="brand-logo" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+      <div class="brand-text">
+        ระบบรับสมัครนักศึกษาใหม่
+        <small>ปีการศึกษา 2569</small>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">หน้าแรก</a>
+      <a href="index.html#programs">สาขาที่เปิดรับ</a>
+      <a href="index.html#timeline">กำหนดการ</a>
+      <a href="status.html" class="active">ตรวจสอบสถานะ</a>
+      <a href="login.html">เข้าสู่ระบบ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="hero-eyebrow">ติดตามใบสมัคร</p>
+    <h1>ตรวจสอบสถานะใบสมัคร</h1>
+    <p>กรอกเลขที่ใบสมัครหรืออีเมลที่ใช้สมัคร เพื่อดูความคืบหน้าล่าสุด</p>
+  </div>
+</section>
+
+<section class="status-shell">
+  <div class="wrap">
+    <div class="status-card">
+      <form class="status-search" onsubmit="return false;">
+        <input type="text" placeholder="เลขที่ใบสมัคร เช่น APP-2569-00123" aria-label="เลขที่ใบสมัคร">
+        <button type="submit" class="btn btn-primary">ค้นหา</button>
+      </form>
+
+      <div class="status-result">
+        <div class="status-head">
+          <div>
+            <div class="appname">APP-2569-00123 · สมชาย ใจดี</div>
+            <div class="hint" style="color:var(--ink-soft); font-size:13px; margin-top:4px;">สาขาที่สมัคร: วิศวกรรมคอมพิวเตอร์</div>
+          </div>
+          <span class="status-badge review">อยู่ระหว่างพิจารณา</span>
+        </div>
+
+        <div class="status-track">
+          <div class="tstep complete">
+            <div class="tdot"></div>
+            <div>
+              <h4>ส่งใบสมัครสำเร็จ</h4>
+              <p>1 ก.ย. 2569 เวลา 10:24 น.</p>
+            </div>
+          </div>
+          <div class="tstep complete">
+            <div class="tdot"></div>
+            <div>
+              <h4>ตรวจสอบเอกสารครบถ้วน</h4>
+              <p>3 ก.ย. 2569 เวลา 14:02 น.</p>
+            </div>
+          </div>
+          <div class="tstep current">
+            <div class="tdot"></div>
+            <div>
+              <h4>อยู่ระหว่างพิจารณาคุณสมบัติ</h4>
+              <p>คาดว่าทราบผลภายใน 15 พ.ย. 2569</p>
+            </div>
+          </div>
+          <div class="tstep">
+            <div class="tdot"></div>
+            <div>
+              <h4>ประกาศผลการคัดเลือก</h4>
+              <p>1 ธ.ค. 2569</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>ระบบรับสมัครนักศึกษาใหม่ · งานทะเบียนและรับเข้าศึกษา</div>
+    <div>สอบถามเพิ่มเติม admission@example.ac.th</div>
+  </div>
+</footer>
+
+</body>
+</html>

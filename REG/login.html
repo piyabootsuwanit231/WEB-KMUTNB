@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เข้าสู่ระบบ - ระบบรับสมัครนักศึกษาใหม่</title>
+<link rel="icon" type="image/png" href="logo-kmutnb.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="form-page">
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <img src="logo-kmutnb.png" class="brand-logo" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+      <div class="brand-text">
+        ระบบรับสมัครนักศึกษาใหม่
+        <small>ปีการศึกษา 2569</small>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">หน้าแรก</a>
+      <a href="index.html#programs">สาขาที่เปิดรับ</a>
+      <a href="index.html#timeline">กำหนดการ</a>
+      <a href="status.html">ตรวจสอบสถานะ</a>
+      <a href="login.html" class="active">เข้าสู่ระบบ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="login-shell">
+  <form class="login-card" onsubmit="return false;">
+    <h2>เข้าสู่ระบบผู้สมัคร</h2>
+    <p class="form-intro">ใช้อีเมลที่ลงทะเบียนไว้เพื่อเข้าดูและแก้ไขใบสมัครของคุณ</p>
+
+    <div class="field" style="margin-bottom:18px;">
+      <label for="login-email">อีเมล *</label>
+      <input type="email" id="login-email" name="login-email" required>
+    </div>
+    <div class="field" style="margin-bottom:8px;">
+      <label for="login-pass">รหัสผ่าน *</label>
+      <input type="password" id="login-pass" name="login-pass" required>
+    </div>
+
+    <div class="login-links">
+      <a href="#">ลืมรหัสผ่าน?</a>
+      <a href="register.html">ยังไม่เคยสมัคร? สมัครเรียน</a>
+    </div>
+
+    <div class="form-actions" style="margin-top:24px;">
+      <button type="submit" class="btn btn-primary" style="width:100%;">เข้าสู่ระบบ</button>
+    </div>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>ระบบรับสมัครนักศึกษาใหม่ · งานทะเบียนและรับเข้าศึกษา</div>
+    <div>สอบถามเพิ่มเติม admission@example.ac.th</div>
+  </div>
+</footer>
+
+</body>
+</html>
